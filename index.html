@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enginuity | Personalized Engineering Education</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <i class="fas fa-cogs logo-icon"></i>
+        <span>Enginuity</span>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="majors.html">Majors</a>
+        <a href="about.html">About</a>
+        <a href="contribute.html">Contribute</a>
+        <a href="faq.html">FAQ</a>
+        <a href="signin.html" class="signin-btn">Sign In</a>
+      </nav>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content" data-aos="fade-right">
+          <div class="badge">FOR UNIVERSITY ENGINEERING STUDENTS</div>
+          <h1>Learn Engineering <span class="highlight">At Your Own Pace</span></h1>
+          <p>Struggling with traditional lectures? Enginuity offers personalized learning pathways, modular videos, and AI tutoring to help you master difficult engineering concepts.</p>
+          <div class="hero-cta">
+            <button class="button primary-btn" onclick="navigateTo('majors.html')">
+              <span>Explore Majors</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="button secondary-btn" onclick="playDemoVideo()">
+              <i class="fas fa-play-circle"></i>
+              <span>Watch Demo</span>
+            </button>
+          </div>
+          <div class="trust-badges">
+            <div class="badge-item">
+              <i class="fas fa-user-graduate"></i>
+              <span>For University Students</span>
+            </div>
+            <div class="badge-item">
+              <i class="fas fa-brain"></i>
+              <span>AI-Powered Tutoring</span>
+            </div>
+            <div class="badge-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Track Your Progress</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+          <div class="hero-image-container">
+            <img src="/api/placeholder/600/500" alt="Engineering students learning">
+            <div class="floating-card card-1">
+              <i class="fas fa-video"></i>
+              <span>Modular Videos</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fas fa-robot"></i>
+              <span>AI Tutoring</span>
+            </div>
+            <div class="floating-card card-3">
+              <i class="fas fa-tasks"></i>
+              <span>Adaptive Practice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Trusted By Section - Removed university logos as this may be inaccurate -->
+  <section class="trusted-by">
+    <div class="container">
+      <h4>Designed For Engineering Students</h4>
+      <div class="logos-container">
+        <div class="university-logo"><i class="fas fa-laptop-code fa-2x"></i> <div>Computer</div></div>
+        <div class="university-logo"><i class="fas fa-cog fa-2x"></i> <div>Mechanical</div></div>
+        <div class="university-logo"><i class="fas fa-flask fa-2x"></i> <div>Chemical</div></div>
+        <div class="university-logo"><i class="fas fa-bolt fa-2x"></i> <div>Electrical</div></div>
+        <div class="university-logo"><i class="fas fa-industry fa-2x"></i> <div>Industrial</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Your Learning Journey</span>
+        <h2>How Enginuity Works</h2>
+        <p>A personalized approach that adapts to your learning pace and style</p>
+      </div>
+
+      <div class="steps">
+        <div class="step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">01</div>
+          <div class="step-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Select Your Major & Course</h3>
+          <p>Choose your engineering discipline and specific course to access a customized learning pathway.</p>
+          <a href="majors.html" class="learn-more">Browse Majors <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3>Learn With Modular Content</h3>
+          <p>Watch focused video lessons, explore visual examples, and use the AI Tutor for immediate clarification.</p>
+          <a href="#" class="learn-more">See Sample Lesson <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number">03</div>
+          <div class="step-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <h3>Practice & Track Mastery</h3>
+          <p>Strengthen your understanding with adaptive practice problems that adjust to your learning progress.</p>
+          <a href="#" class="learn-more">Try Demo Practice <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section - Adjusted to be more realistic -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-value" data-count="100">0</div>
+          <div class="stat-label">Learning Modules</div>
+          <div class="stat-suffix">+</div>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-value" data-count="1000">0</div>
+          <div class="stat-label">Practice Problems</div>
+          <div class="stat-suffix">+</div>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-value" data-count="200">0</div>
+          <div class="stat-label">Video Tutorials</div>
+          <div class="stat-suffix">+</div>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-value" data-count="24">0</div>
+          <div class="stat-label">Hour AI Support</div>
+          <div class="stat-suffix">/7</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Empower Section -->
+  <section class="empower">
+    <div class="container">
+      <div class="empower-grid">
+        <div class="empower-content" data-aos="fade-right">
+          <span class="section-subtitle">Our Mission</span>
+          <h2>Empowering Engineering Students</h2>
+          <p>At Enginuity, we believe every student deserves personalized support to master engineering concepts at their own pace and learning style.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Structured learning pathways for each course</li>
+            <li><i class="fas fa-check"></i> Modular video lessons for complex topics</li>
+            <li><i class="fas fa-check"></i> Adaptive practice questions that adjust to your level</li>
+            <li><i class="fas fa-check"></i> 24/7 AI tutoring for immediate support</li>
+          </ul>
+          <button class="button primary-btn" onclick="navigateTo('about.html')">Learn About Our Mission</button>
+        </div>
+        <div class="empower-image" data-aos="fade-left">
+          <img src="https://images.stockcake.com/public/e/b/3/eb39d646-8acf-4d5c-a7f2-4c551ce59604_large/engineering-team-working-stockcake.jpg" alt="Engineering students collaborating">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Majors Section -->
+  <section class="majors-explore">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Find Your Path</span>
+        <h2>Explore Engineering Majors</h2>
+        <p>Comprehensive content for popular engineering disciplines</p>
+      </div>
+
+      <div class="majors-grid">
+        <div class="major-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="major-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Computer Engineering</h3>
+          <p>Hardware design, software development, and the intersection of computing systems.</p>
+          <a href="#" class="major-link">View Courses <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="major-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="major-icon">
+            <i class="fas fa-cog"></i>
+          </div>
+          <h3>Mechanical Engineering</h3>
+          <p>Design, manufacturing, and analysis of mechanical systems and energy conversion.</p>
+          <a href="#" class="major-link">View Courses <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="major-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="major-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3>Chemical Engineering</h3>
+          <p>Process design, thermodynamics, and the transformation of raw materials.</p>
+          <a href="#" class="major-link">View Courses <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="major-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="major-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Electrical Engineering</h3>
+          <p>Electronics, power systems, and electromagnetic applications.</p>
+          <a href="#" class="major-link">View Courses <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="major-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="major-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Industrial Engineering</h3>
+          <p>Optimization of complex processes, systems, and organizations.</p>
+          <a href="#" class="major-link">View Courses <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="major-card coming-soon" data-aos="fade-up" data-aos-delay="600">
+          <div class="major-icon">
+            <i class="fas fa-plus"></i>
+          </div>
+          <h3>More Coming Soon</h3>
+          <p>We're expanding to cover more engineering disciplines and courses.</p>
+          <a href="#" class="major-link">Request a Course <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section - Made more realistic -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Student Experiences</span>
+        <h2>Learning Engineering Differently</h2>
+        <p>Hear from fellow engineering students about their experience with Enginuity</p>
+      </div>
+
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-item active" data-aos="fade-up">
+          <div class="testimonial-content">
+            <div class="quote"><i class="fas fa-quote-left"></i></div>
+            <p>"When I couldn't understand complex Thermodynamics concepts from lectures alone, Enginuity's step-by-step videos and interactive practice problems helped me finally grasp the material."</p>
+            <div class="testimonial-author">
+              <img src="/api/placeholder/60/60" alt="Sarah J." class="author-img">
+              <div class="author-info">
+                <h4>Sarah J.</h4>
+                <p>Mechanical Engineering Student</p>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-content">
+            <div class="quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Being able to ask the AI tutor questions anytime I got stuck made a huge difference. The adaptive practice problems helped me identify and focus on my weak areas in Circuit Theory."</p>
+            <div class="testimonial-author">
+              <img src="/api/placeholder/60/60" alt="Michael T." class="author-img">
+              <div class="author-info">
+                <h4>Michael T.</h4>
+                <p>Electrical Engineering Student</p>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-content">
+            <div class="quote"><i class="fas fa-quote-left"></i></div>
+            <p>"As an international student, I struggled with technical terminology. The modular videos and visual examples in Enginuity helped me understand reactor design concepts I was missing in class."</p>
+            <div class="testimonial-author">
+              <img src="/api/placeholder/60/60" alt="Aisha M." class="author-img">
+              <div class="author-info">
+                <h4>Aisha M.</h4>
+                <p>Chemical Engineering Student</p>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-navigation" data-aos="fade-up">
+        <button class="prev-btn" onclick="prevTestimonial()"><i class="fas fa-arrow-left"></i></button>
+        <div class="testimonial-dots">
+          <span class="dot active" onclick="showTestimonial(0)"></span>
+          <span class="dot" onclick="showTestimonial(1)"></span>
+          <span class="dot" onclick="showTestimonial(2)"></span>
+        </div>
+        <button class="next-btn" onclick="nextTestimonial()"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content" data-aos="zoom-in">
+        <h2>Ready to Transform Your Engineering Education?</h2>
+        <p>Join other engineering students who've found a better way to learn difficult concepts with Enginuity.</p>
+        <div class="cta-buttons">
+          <button class="button primary-btn" onclick="navigateTo('signup.html')">Explore Courses</button>
+          <button class="button outline-btn" onclick="navigateTo('contribute.html')">Contribute Content</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <i class="fas fa-cogs logo-icon"></i>
+            <span>Enginuity</span>
+          </div>
+          <p>Helping engineering students learn at their own pace with personalized support.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="majors.html">Majors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Study Tips</a></li>
+            <li><a href="#">Course Guides</a></li>
+            <li><a href="#">Engineering Topics</a></li>
+            <li><a href="#">Contribute Content</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> support@enginuity.edu</li>
+            <li><i class="fas fa-comment"></i> Live Chat Support</li>
+            <li><i class="fas fa-map-marker-alt"></i> Feedback Form</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>© 2025 Enginuity. All rights reserved.</p>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div class="video-container">
+        <div class="video-placeholder">
+          <i class="fas fa-play-circle"></i>
+          <p>Demo Video</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

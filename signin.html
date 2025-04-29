@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Enginuity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-container">
+    <div class="logo">
+      <i class="fas fa-cogs logo-icon"></i>
+      <span>Enginuity</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="majors.html">Majors</a>
+      <a href="about.html">About</a>
+      <a href="contribute.html">Contribute</a>
+      <a href="faq.html">FAQ</a>
+      <a href="signin.html" class="signin-btn active">Sign In</a>
+    </nav>
+  </div>
+</header>
+
+<section class="signin-section">
+  <div class="container signin-container">
+    <h1>Welcome Back</h1>
+    <p>Sign in to continue learning with Enginuity.</p>
+    <form onsubmit="event.preventDefault(); navigateTo('majors.html');">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="button primary-btn">Sign In</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p style="text-align: center; margin: 20px 0;">© 2025 Enginuity. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

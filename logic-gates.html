@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Gates - Enginuity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Enginuity</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="majors.html">Majors</a>
+    <a href="cse-courses.html">Courses</a>
+    <a href="about.html">About</a>
+    <a href="contribute.html">Contribute</a>
+    <a href="faq.html">FAQ</a>
+    <a href="signin.html" class="signin-btn">Sign In</a>
+  </nav>
+</header>
+
+<section class="learning-section">
+  <div class="container learning-container">
+
+    <div class="learning-video-container">
+      <h1>Logic Gates</h1>
+      <div class="video-wrapper">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/JQBRzsPhw2w"
+        title="Logic Gates Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+      </div>
+
+      <div class="practice-launch">
+        <button class="button primary-btn" onclick="showPractice()">Start Practice</button>
+      </div>
+
+      <div id="practice-questions" style="display: none;">
+        <h2>Practice Questions</h2>
+
+        <div class="question-card">
+          <p>Which logic gate outputs HIGH only when both inputs are HIGH?</p>
+          <div class="answers">
+            <button onclick="checkAnswer(this, true)">OR gate</button>
+            <button onclick="checkAnswer(this, false)">AND gate</button>
+            <button onclick="checkAnswer(this, false)">NOT gate</button>
+            <button onclick="checkAnswer(this, false)">XOR gate</button>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <p>True or False: A NOT gate has two inputs.</p>
+          <div class="answers">
+            <button onclick="checkAnswer(this, false)">True</button>
+            <button onclick="checkAnswer(this, true)">False</button>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <p>The output of an OR gate is LOW when:</p>
+          <div class="answers">
+            <button onclick="checkAnswer(this, false)">All inputs are HIGH</button>
+            <button onclick="checkAnswer(this, false)">Any input is HIGH</button>
+            <button onclick="checkAnswer(this, true)">All inputs are LOW</button>
+            <button onclick="checkAnswer(this, false)">Any input is LOW</button>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <p>True or False: An XOR gate gives a HIGH output when both inputs are the same.</p>
+          <div class="answers">
+            <button onclick="checkAnswer(this, false)">True</button>
+            <button onclick="checkAnswer(this, true)">False</button>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <p>Which gate is known as an inverter?</p>
+          <div class="answers">
+            <button onclick="checkAnswer(this, false)">AND gate</button>
+            <button onclick="checkAnswer(this, false)">OR gate</button>
+            <button onclick="checkAnswer(this, true)">NOT gate</button>
+            <button onclick="checkAnswer(this, false)">NAND gate</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chat-container">
+      <h2>Ask Your AI Tutor</h2>
+      <div class="chat-feed" id="chat-feed">
+        <!-- Messages will appear here -->
+      </div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Type your question here..." required>
+        <button type="submit" class="button primary-btn">Send</button>
+      </form>
+    </div>
+
+
+
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p style="text-align: center;">© 2025 Enginuity. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+<script>
+// Chat functionality
+const chatForm = document.getElementById('chat-form');
+const chatFeed = document.getElementById('chat-feed');
+const chatInput = document.getElementById('chat-input');
+
+chatForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const userMessage = chatInput.value.trim();
+  if (userMessage !== '') {
+    // Add the user's message
+    const userElement = document.createElement('div');
+    userElement.className = 'chat-message user';
+    userElement.textContent = userMessage;
+    chatFeed.appendChild(userElement);
+
+    // Simulate AI response after a short delay
+    setTimeout(() => {
+      const aiElement = document.createElement('div');
+      aiElement.className = 'chat-message';
+      aiElement.textContent = "An and gate can either be on or off. It will ONLY turn on if both inputs are also on. You can think of it like a light that only turns on if two separate switches are both switched ON at the same time.";
+      chatFeed.appendChild(aiElement);
+      chatFeed.scrollTop = chatFeed.scrollHeight;
+    }, 500); // Half a second delay for realism
+
+    chatInput.value = '';
+    chatFeed.scrollTop = chatFeed.scrollHeight;
+  }
+});
+
+
+</script>
+</body>
+</html>
